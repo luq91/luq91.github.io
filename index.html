@@ -10,30 +10,14 @@
   <form action="https://ssl.dotpay.pl/test_payment/" method="post" target="_parent">
     <p style="font-size: 18px">T E S T</p>
     <p>
-<!--
+
       <input type="button" onClick="$('#kwota').val('10'); $('#kwota').prop('disabled', true);" value="10.00 zł" />
       <input type="button" onClick="$('#kwota').val('20'); $('#kwota').prop('disabled', true);" value="20.00 zł" />
       <input type="button" onClick="$('#kwota').val('50'); $('#kwota').prop('disabled', true);" value="50.00 zł" />
--->
+
       <input type="hidden" name="type" value="0" />
       <input type="hidden" name="currency" value="PLN" />
 
-      <table>
-        <tr>
-          <td><input type="button" onClick="$('#kwota').prop('disabled', false);" value="Inna kwota" /></td>
-          <td>Kwota:<br /><input
-            type="text"
-            name="amount"
-            id="kwota"
-            size="5"
-            disabled="disabled"
-            pattern="^([1-9])((\.\d{1,2})?)$|^((?!0)(\d){1,5})((\.\d{1,2})?)$|^(1(\d{5})(.\d{1,2})?)$|^(200000(.[0]{1,2})?)$"
-            placeholder="np. 100"
-            maxlength="9"
-            size="9"
-            title="Kwota powinna zawierać się w przedziale 1 - 200000 PLN. Dozwolony format to np: 100 lub 152.43" /></td>
-        </tr>
-      </table>
 
       <input type="hidden" name="id" value="720134" />
       <input type="hidden" name="description" value="TEST" />
