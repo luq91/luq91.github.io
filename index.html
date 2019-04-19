@@ -13,7 +13,10 @@
 
       <input type="button" onClick="$('#kwota').val('10'); $('#kwota').prop('disabled', true);" value="10.00 zł" />
       <input type="button" onClick="$('#kwota').val('20'); $('#kwota').prop('disabled', true);" value="20.00 zł" />
-      <input type="button" onClick="$('#kwota').val('50'); $('#kwota').prop('disabled', true);" value="50.00 zł" />
+      <input name="amount" id="kwota" size="6" value="" type="text" required
+      pattern="^([1-9])((\.\d{1,2})?)$|^((?!0)(\d){1,5})((\.\d{1,2})?)$|^(1(\d{5})(.\d{1,2})?)$|^(200000(.[0]{1,2})?)$"
+      placeholder="np. 10" maxlength="9" size="9"
+      title="Kwota powinna mieścić się w przedziale 1 - 200 000 PLN. Dozwolony format to np: 10 lub 10.00">PLN
 
       <input type="hidden" name="type" value="0" />
       <input type="hidden" name="currency" value="PLN" />
