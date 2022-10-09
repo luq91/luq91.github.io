@@ -4,3 +4,7 @@ body, a{
   font-family: "Courier";
   font-size:14px;
 }
+h1,h2{
+  margin-left: 200px;
+  margin-top: 200px;
+}
